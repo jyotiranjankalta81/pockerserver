@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const port = 80;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -110,6 +110,6 @@ app.post("/api/calculate-winner", (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
